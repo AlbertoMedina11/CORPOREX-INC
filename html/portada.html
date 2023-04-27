@@ -21,7 +21,7 @@
 
     <style>
       body {
-        background-color:grey;
+        background-image:"../css/images/mazo.jpeg"
       };
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -31,12 +31,30 @@
         user-select: none;
       }
 
+      .card-body{
+        text-align: left;
+       
+
+      }
+
+      .card-header-1 {
+        background-color: aqua;
+      }
+      .card-header-2 {
+        background-color: blue;
+      }
+      .card-header-3 {
+        background-color: green;
+      }
+     
+
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
-
+    
       .b-example-divider {
         width: 100%;
         height: 3rem;
@@ -94,6 +112,7 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+     
     </style>
 
     
@@ -174,7 +193,7 @@
         <a class="py-2 link-body-emphasis text-decoration-none" href="#">Ayuda</a>
       </nav>
     </div>
-
+    
     <div class="pricing-header p-3 pb-md-4 mx-auto">
       <h1 class="display-4 fw-normal text-center">BIENVENIDO ALBERTO!!</h1>
       <p class="fs-5 text-body-secondary text-left">Notificaciones: </p>
@@ -189,60 +208,82 @@
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>CONTRATOS</strong></h4>
+          <div class="card-header-1 py-3">
+            <h4 class="my-0 fw-normal"><strong>PATITO S.A. DE C.V.</strong></h4>
           </div>
           <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Compra Venta</li>
-              <li>Arrendamiento</li>
-              <li>Subarrendamiento</li>
-              <li>Prenda</li>
-              <li>Licencia de Uso</li>
+            <ul  class="list-unstyled mt-3 mb-4" >
+              <li><strong>Razon social:</strong><p>S.A. DE C.V.</p></li>
+              <li><strong>Duracion:</strong><p>Indefinido</p></li>
+              <li><strong>Administrador Unico:</strong><p>Si</p></li>
+              <li><strong>Consejo de Administracion:</strong><p>No</p></li>
+              <li><strong>Fecha de Constitucion: </strong><p>15 febrero 2015</p></li>
             </ul>
-           <a type="button" class="btn btn-danger btn-lg" href="./contratos.html">IR</a>
+           <a type="button" class="btn btn-danger btn-lg" href="./patitos.html">IR</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>CORPORATIVO</strong></h4>
+          <div class="card-header-2 py-3">
+            <h4 class="my-0 fw-normal"><strong>MEDINA CORP</strong></h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Asambleas Ordinarias</li>
-              <li>Asambleas Extraordinarias</li>
-              <li>Consejo de Administracion</li>
-              <li>Listas de Asistencia</li>
-              <li>Otros</li>
+              <li><strong>Razon social:</strong><p>S. DE R.L. DE C.V.</p></li>
+              <li><strong>Duracion:</strong><p>50</p></li>
+              <li><strong>Administrador Unico:</strong><p>No</p></li>
+              <li><strong>Consejo de Administracion:</strong><p>No</p></li>
+              <li><strong>Fecha de Constitucion: </strong><p>10 diciembre 2013</p></li>
             </ul>
-            <a type="button" class="btn btn-danger btn-lg" href="./corporativo.html">IR</a>
+            <a type="button" class="btn btn-danger btn-lg" href="./medina.html">IR</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>INSTRUMENTOS</strong></h4>
+            <div class="card-header-3 py-3">
+            <h4 class="my-0 fw-normal"><strong>RODRIGUEZ INC</strong></h4>
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Pagares</li>
-              <li>Notificaciones</li>
-              <li>Cartas de instruccion</li>
-              <li>Cartas de entrega</li>
-              <li>.</li>
+              <li><strong>Razon social:</strong><p>S.A.S.</p></li>
+              <li><strong>Duracion:</strong><p>50</p></li>
+              <li><strong>Administrador Unico:</strong><p>No</p></li>
+              <li><strong>Consejo de Administracion:</strong><p>No</p></li>
+              <li><strong>Fecha de Constitucion: </strong><p>20 Noviembre 2010</p></li>
             </ul>
-            <a type="button" class="btn btn-danger btn-lg" href="./instrumentos.html">IR</a>
+            <a type="button" class="btn btn-danger btn-lg" href="./rodriguez.html">IR</a>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header-4 py-3">
+            <h4 class="my-0 fw-normal"><strong>AGREGAR SOCIEDAD</strong></h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><strong>Razon social:</strong><input type="text" id="inputid1"></li>
+              <li><strong>Duracion:  </strong></li>
+              <input type="text">
+              <li><strong>Administrador Unico:</strong><input type="text" id="inputid2"></li>
+              <li><strong>Consejo de Administracion:</strong><input type="text" id="inputid3"></li>
+              <li><strong>Fecha de Constitucion: </strong><input type="text" id="inputid4"  ></li>
+              <button id="btn" onclick="btnOnClick()">AGREGAR INFO</button>
+            </ul>
+
+          </div>
+
         </tbody>
       </table>
     </div>
   </main>
+
+<div id=" resultado" ></div>
+
+
+
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
@@ -271,7 +312,7 @@
   </footer>
 </div>
 
-
+<script src= "../script.js"></script>
     
   </body>
 </html>
