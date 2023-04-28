@@ -1,4 +1,5 @@
 
+// PORTADA HTML
 
 const input1 = document.querySelector('#inputid1');
 
@@ -7,36 +8,53 @@ const input2 = document.querySelector('#inputid2');
 const input3 = document.querySelector('#inputid3');
 
 const input4 = document.querySelector('#inputid4');
+
+const input5 = document.querySelector('#inputid5');
+const nuevohtml = document.querySelector('#nuevohtml');
+
+
 const btn = document.querySelector('#btn');
-const resultado = document.querySelector('#resultado');
+const ingreso1 = document.querySelector('#ingreso1');
+const ingreso2 = document.querySelector('#ingreso2');
+const ingreso3 = document.querySelector('#ingreso3');
+const ingreso4 = document.querySelector('#ingreso4');
+const ingreso5 = document.querySelector('#ingreso5');
 
 function btnOnClick(){
     const razon = input1.value;
-    const administracion = input1.value;
-    const duracion = input3.value;
-    const consejo = input1.value;
+    const duracion = input2.value;
+    const administracion = input3.value;
+    const consejo = input4.value;
+    const constitucion = input5.value;
 
-    resultado.innerHTML = 
-    
-    "
-    <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header-3 py-3">
-        <h4 class="my-0 fw-normal"><strong></strong></h4>
-      </div>
-      <div class="card-body">
-        <ul class="list-unstyled mt-3 mb-4">
-          <li><strong>Razon social:</strong><p>{razon}</p></li>
-          <li><strong>Duracion:</strong><p>{administracion}</p></li>
-          <li><strong>Administrador Unico:</strong><p>{duracion}</p></li>
-          <li><strong>Consejo de Administracion:</strong><p>{consejo}</p></li>
-          <li><strong>Fecha de Constitucion: </strong><p></p></li>
-        </ul>
-        <a type="button" class="btn btn-danger btn-lg" href='#' >IR</a>
-      </div>
-    </div>
-  </div>"
+    ingreso1.innerText = razon;
+    ingreso2.innerText = "Duracion" + duracion;
+    ingreso3.innerText = " Administracion" + administracion;
+    ingreso4.innerText = " Consejo de Administracion " + consejo;
+    ingreso5.innerText = "Constitucion " + constitucion;
+};
 
 
+const Nuevasociedad = [];
+
+Nuevasociedad.push({
+ name: "alberto",
+ duracion: "55",
+ 
+});
+
+
+
+
+
+       
+// PATITOS HTML
+const Agregarcontrato = document.querySelector('#Agregarcontrato');
+
+const enviarcontrato = document.querySelector('enviarcontrato')
+
+function Seagreganuevocontrato(){
+  const contratonuevo = Agregarcontrato.value;
+  enviarcontrato.innerText = contratonuevo;
 };
 
