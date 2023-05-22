@@ -7,34 +7,31 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>PATITO S.A. DE C.V.</title>
+    <title>Signin Template · Bootstrap v5.3</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<link href="../css/portada.css" rel="stylesheet">
-
-    
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
 
     <style>
-      body {
-        background-image:"../css/images/mazo.jpeg"
-      };
+      .mazo {
+        
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+        width: 100%;
+}
+    
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+        
       }
-
-      .card-body{
-        text-align: left;
-      }
-
+      
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -98,14 +95,13 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
-     
     </style>
 
     
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="sign-in.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="text-center">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -158,143 +154,39 @@
     </div>
 
     
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="check" viewBox="0 0 16 16">
-    <title>Check</title>
-    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-  </symbol>
-</svg>
+<main class="form-signin w-100 m-auto">
 
-<div class="container py-3">
-  <header>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="./portada.html" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-        
-        <span class="fs-4">Regresar</span>
-      </a>
 
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Notificaciones</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Alertas</a>
-        
-      </nav>
-    </div>
 
-    <div class="pricing-header p-3 pb-md-4 mx-auto">
-      <h1 class="display-4 fw-normal text-center">PATITO S.A. DE C.V.</h1>
-    </div>
-  </header>
 
-  <main>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>CONTRATOS</strong></h4>
-          </div>
-          <form action="#"> 
-            <select name="Escoger" id="Escoger-contratos" >Escoger
-            <option value="Compra-Venta">Compra Venta</option>
-            <option value="Arrendamiento" >Arrendamiento</option>
-            <option value="Franquicia" >Franquicia</option>
-            <option value="licencia de uso">Licencia de Uso</option>
-            <option value="licencia de uso">Obra Civil</option>
-            <option value="licencia de uso">Prestacion de Servicios</option>
-            <option value="licencia de uso">Laborales</option>
-            </select>
-            <a type="button" class="btn btn-primary btn-sm" onclick="Escoger()">IR</a>
-          </form>
-        </div>
-      </div>
-
-      
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>ACTOS CORPORATIVOS</strong></h4>
-          </div>
-          <form action="#">
-            <select name="Escoger-ActosCorporativos" id="lang">Escoger
-            <option value="AsambleasOrdinarias">Asambleas Ordinarias</option>
-            <option value="AsambleasExtraordinarias">Asambleas Extraordinarias</option>
-            <option value="Poderes">Poderes</option>
-          </select>
-          <a type="button" class="btn btn-primary btn-sm" onclick="btnAgregar" href="./medina.html">IR</a>
-          </form>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>ADMINISTRACION</strong></h4>
-          </div>
-          <form action="#">
-            <select name="Escoger-ConsejodeAdministracion" id="lang">Escoger
-            <option value="Consejo-de-Administracion">Consejo de Administracion</option>
-            <option value="Resoluciones">Resoluciones del Consejo</option>
-          </select>
-          <a type="button" class="btn btn-primary btn-sm" href="./medina.html">IR</a>
-          </form>
-          
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>INSTRUMENTOS</strong></h4>
-          </div>
-          <form action="#">
-            <label for="lang"></label>
-            <select name="Escoger-Instrumentos" id="lang">Escoger
-            <option value="Pagare">Pagare</option>
-            <option value="Carta-instruccion">Cartas de instruccion</option>
-            <option value="Carta-entrega">Carta de entrega</option>
-          </select>
-          <a type="button" class="btn btn-primary btn-sm" href="./medina.html">IR</a>
-          </form>
-        </div>
-      </div>
-      <div class="col">
-     
-
-        </div>
-      </div>
-    </div>
-        </tbody>
-      </table>
-    </div>
-  </main>
-  
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
-        <div class="col-12 col-md">
-
-        </div>
-   
-      <div class="col-6 col-md">
-        <h5>Nosotros</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Blog</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Unete a nuestro equipo</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Noticias</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Acerca de</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipo</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Aviso de Privacidad</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terminos y Condiciones</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Acerca de Nosotros</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<script src= "../script.js"></script>
+  <h1><strong> CORPOREX</strong></h1>
+ 
+  <form>
     
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p></p>
+    <button class="w-100 btn btn-lg btn-primary" id="buttonsubmit" type="submit">New member</button>
+   
+  </form>
+</main>
+
+
+
   </body>
 </html>
