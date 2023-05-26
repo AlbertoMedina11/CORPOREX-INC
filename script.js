@@ -25,14 +25,18 @@ const ingreso6 = docuement.querySelector('#ingreso6');
 function btnOnClick(){
     const nombre = input1.value;
     const razon = input2.value;
-    const nuevoboton = document.createElement('button');
-   
-
+    const nuevobotonregistro = document.createElement('button');
+        nuevobotonregistro.innerText= "Registro";
+        
+    const nuevobotonborrar = document.createElement("button");
+        nuevobotonborrar.innerText = "Borrar";
 
     ingreso1.innerText = nombre;
     ingreso2.innerText = "Razon o Denominacion Social: " + razon  ; 
-    ingreso5.appendChild(nuevoboton);  
+    ingreso5.appendChild(nuevobotonregistro);  
+    
 };
+
 
 
 function Borrador1(){
@@ -50,16 +54,12 @@ function Borrador3(){
     caja3.remove(caja3);
 };
 
-// PATITOS 
 
-function Escoger(){
-    const option = document.getElementById('Escoger-contratos').value;
-
-    if (option == "Arrendamiento " ){
-        windows.location.href= "./html/arrendamiento.html"
-    } else if (option === "Compra venta"){
-        windows.location.href= "./html/compraventa.html"
-    };
-    
-};
-
+function funcategory(){
+    var a = document.getElementById('h1');
+    if (a.style.display === "none") {
+      a.style.display = "block";
+    } else {
+      a.style.display = "none";
+    }
+  };
