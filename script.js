@@ -54,12 +54,42 @@ function Borrador3(){
     caja3.remove(caja3);
 };
 
+const segunda = document.getElementById('segunda');
 
-function funcategory(){
-    var a = document.getElementById('h1');
-    if (a.style.display === "none") {
-      a.style.display = "block";
-    } else {
-      a.style.display = "none";
-    }
-  };
+const primer = document.getElementById('primer');
+const columnas = document.getElementById('columnas');
+
+
+
+function borrar(){
+    const columnas = document.getElementById('columnas');
+    columnas.style.display= "none"
+
+};
+
+function abrir(){
+    const columnas =document.getElementById('columnas');
+    columnas.style.display = "block"
+};
+
+
+
+   
+//    Style.display= "none";
+
+//    Style.display= "block";
+   
+
+
+
+
+
+
+
+
+
+const checkbox = document.getElementById('tyc');
+
+checkbox.addEventListener('change', ()=>{
+    console.log('datos aceptados');
+});
