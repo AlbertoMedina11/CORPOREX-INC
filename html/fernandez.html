@@ -21,7 +21,7 @@
 
     <style>
       body {
-        background-image:"../css/images/mazo.jpeg"
+        background-color: antiquewhite
       };
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -98,7 +98,7 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
-      
+     
     </style>
 
     
@@ -183,122 +183,81 @@
     <div class="pricing-header p-3 pb-md-4 mx-auto">
       <h1 class="display-4 fw-normal text-center">FERNANDEZ S.A. DE C.V.</h1>
     </div>
-
-    <a type="button" class="btn btn-danger" href="#" onclick="borrar()"> 2023</a>
-    <a type="button" class="btn btn-danger" href="#" onclick="abrir()">2022</a>
-    <a type="button" class="btn btn-danger" href="#" onmouseenter="">2021</a>
-    <a type="button" class="btn btn-danger" href="#" onmouseenter="">2020</a>
-    <a type="button" class="btn btn-danger" href="#" onmouseenter="">2019</a>
-
   </header>
+  <a type="button" class="btn btn-outline-danger" >2023</a>
 
-  <main id="columnas">
+  <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col-columna">
+      <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>CONTRATOS</strong></h4>
+            <h4 class="my-0 fw-normal">CONTRATOS</h4>
           </div>
-          <form action="#"> 
-            <a type="button" class="btn btn-outline-dark" href="./contratos/compraventa.html">CompraVenta</a>
-            <a type="button" class="btn btn-outline-dark" href="./contratos/arrendamiento.html">Arrendamiento</a>
-            <a type= "button" class= "btn btn-outline-dark" href="./contratos/permuta.html">Permuta</a>
+          <div class="card-body">
+            <button type="button" class="btn btn-outline-secondary">CompraVenta</button>
+            <button type="button" class="btn btn-outline-secondary">Arrendamiento</button>
+            <button type="button" class="btn btn-outline-secondary">Permuta</button>
+            <button type="button" class="btn btn-outline-secondary">Licencia de Uso</button>
             <button type="button" class="btn btn-outline-secondary">Franquicia</button>
             <button type="button" class="btn btn-outline-secondary">Laborales</button>
             <button type="button" class="btn btn-outline-secondary">De Servicio</button>
-            
-          </form>
+          </div>
         </div>
       </div>
-
       
-      <div class="col-columna">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>ACTOS CORPORATIVOS</strong></h4>
-          </div>
-          <form action="#">
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/compraventa.html">Asamblea Ordinaria</a>
-            <p></p>
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/arrendamiento.html">Asamblea Extraordinaria</a>
-            <p></p>
-            <a type= "button" class= "btn btn-outline-dark" href="html/contratos/Permuta">Poderes</a>
-          
-          </form>
-        </div>
-      </div>
-
-      <div class="col-columna">
-        <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>ADMINISTRACION</strong></h4>
-          </div>
-          <form action="#">
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/compraventa.html">Consejo de Administracion</a>
-            <p></p>
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/arrendamiento.html">Resoluciones de Consejo de Administracion</a>
- 
-            
-         
-          </form>
-          
-        </div>
-      </div>
-
-      <div class="col-columna">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"><strong>INSTRUMENTOS</strong></h4>
-          </div>
-          <form action="#">
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/compraventa.html">Cartas de instruccion</a>
-            <p></p>
-            <a type="button" class="btn btn-outline-dark" href="/html/contratos/arrendamiento.html">Pagares</a>
-            <p></p>
-            <a type= "button" class= "btn btn-outline-dark" href="html/contratos/Permuta">Cartas de entrega</a>
-            
-          </form>
-        </div>
-      </div>
       <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">ACTOS CORPORATIVOS</h4>
+          </div>
+          <div class="card-body" >
+            <button type="button" class="btn btn-outline-secondary">Asamblea Ordinaria</button>
+            <button type="button" class="btn btn-outline-secondary">Asamblea Extraordinaria</button>
+            <button type="button" class="btn btn-outline-secondary">Poderes</button>
+          </div>
+        </div>
+      </div>
      
 
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal">ADMINISTRACION</h4>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-outline-secondary">Consejo de Administracion</button>
+            <button type="button" class="btn btn-outline-secondary">Resoluciones del Consejo</button>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal">INSTRUMENTOS</h4>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-outline-secondary">Pagare</button>
+            <button type="button" class="btn btn-outline-secondary">Carta de entrega</button>
+            
+          </div>
         </div>
       </div>
     </div>
-        </tbody>
-      </table>
     </div>
   </main>
   
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
         <div class="col-12 col-md">
-
         </div>
-   
-      <div class="col-6 col-md">
-        <h5>Nosotros</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Blog</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Unete a nuestro equipo</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Noticias</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Acerca de</h5>
-        <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipo</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Aviso de Privacidad</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terminos y Condiciones</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Acerca de Nosotros</a></li>
-        </ul>
-      </div>
     </div>
   </footer>
+  
 </div>
 
-<script src= "../script.js"></script>
+
     
   </body>
 </html>

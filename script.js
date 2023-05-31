@@ -54,39 +54,30 @@ function Borrador3(){
     caja3.remove(caja3);
 };
 
-const segunda = document.getElementById('segunda');
 
-const primer = document.getElementById('primer');
-const columnas = document.getElementById('columnas');
+const columnas = document.getElementById('columnas-1');
 
-
-
-function borrar(){
-    const columnas = document.getElementById('columnas');
-    columnas.style.display= "none"
-
+function veintitres(){
+    const columnas1 =document.getElementById('columnas-1');
+    columnas1.style.display = "block";
 };
 
-function abrir(){
-    const columnas =document.getElementById('columnas');
-    columnas.style.display = "block"
+function veintidos(){
+    const columnas1 = document.getElementById('columnas-1');
+     columnas1.style.display = "none";
+   
 };
 
 
 
    
-//    Style.display= "none";
-
-//    Style.display= "block";
-   
 
 
 
 
 
 
-
-
+// CHECK BOX
 
 const checkbox = document.getElementById('tyc');
 
